@@ -3,119 +3,199 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vonetto Residencial en Querétaro | Rosy Almanza Limón</title>
-<meta name="description" content="Casas en Vonetto Residencial, Ziré, Querétaro: modelos Auren, Nyra, Kobe y Matsue. Contacta a Rosy Almanza Limón.">
+<title>Vonetto Residencial en Querétaro | Rosy Almanza</title>
+<meta name="description" content="Casas y departamentos en Vonetto Residencial, Ziré, Querétaro. Modelos Nyra, Kobe, Matsue y Auren. Contacta a Rosy Almanza, asesora inmobiliaria.">
 <style>
-  :root { --bg:#f6f3ee; --card:#ffffff; --text:#1f2a37; --muted:#5b6672; --accent:#b4572f; --accent-dark:#8f431f; --soft:#fbeee6; }
+  :root { --dark:#14181c; --bg:#f2f3f5; --card:#fff; --text:#1d2127; --muted:#5d6670; --blue:#2b4fe0; --green:#25d366; --soft:#e8ecff; }
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; }
-  body { margin:0; font-family:Arial, sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
-  .wrap { max-width:960px; margin:0 auto; padding:0 20px; }
-  header.top { background:var(--card); box-shadow:0 2px 10px rgba(0,0,0,.06); position:sticky; top:0; z-index:10; }
-  header.top .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
-  .brand { font-family:Georgia, serif; font-weight:bold; font-size:18px; }
-  nav a { color:var(--muted); text-decoration:none; margin-left:16px; font-size:14px; }
-  nav a:hover { color:var(--accent); }
-  .hero { background:linear-gradient(135deg, #b4572f, #7a3a1c); color:#fff; padding:70px 0; text-align:center; }
-  .hero h1 { font-family:Georgia, serif; font-size:clamp(30px, 6vw, 46px); margin:0 0 12px; }
-  .hero p { max-width:620px; margin:0 auto 26px; font-size:17px; opacity:.95; }
-  .btn { display:inline-block; text-decoration:none; padding:13px 24px; border-radius:12px; font-weight:bold; margin:6px; }
-  .btn.light { background:#fff; color:var(--accent-dark); }
-  .btn.ghost { border:2px solid #fff; color:#fff; }
-  .btn.primary { background:var(--accent); color:#fff; }
-  .btn.primary:hover { background:var(--accent-dark); }
-  .btn.outline { border:2px solid var(--accent); color:var(--accent); }
-  .btn.outline:hover { background:var(--accent); color:#fff; }
-  section { padding:54px 0; }
-  h2 { font-family:Georgia, serif; font-size:28px; margin:0 0 8px; text-align:center; }
-  .lead { text-align:center; color:var(--muted); max-width:620px; margin:0 auto 30px; }
-  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); }
-  .card { background:var(--card); border-radius:16px; padding:24px 18px; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,.06); }
-  .card .ico { font-size:30px; display:block; margin-bottom:8px; }
-  .model { font-family:Georgia, serif; font-size:22px; color:var(--accent-dark); }
-  .alt { background:var(--soft); }
-  .contact { text-align:center; }
-  .contact .name { font-family:Georgia, serif; font-size:26px; margin:10px 0 2px; }
-  .avatar { width:84px; height:84px; border-radius:50%; background:var(--accent); color:#fff; font-size:32px; display:flex; align-items:center; justify-content:center; margin:0 auto; }
-  .note { font-size:12px; color:var(--muted); text-align:center; margin-top:22px; }
-  footer { text-align:center; font-size:13px; color:var(--muted); padding:24px 0 36px; }
+  body { margin:0; font-family:"Poppins", "Segoe UI", Arial, sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  .wrap { max-width:1000px; margin:0 auto; padding:0 20px; }
+  .hero { background:var(--dark); color:#fff; }
+  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; align-items:stretch; max-width:none; padding:0; }
+  .hero-text { padding:70px 40px 90px max(20px, calc((100vw - 1000px)/2 + 20px)); }
+  .eyebrow { color:#8fa2ff; font-weight:600; font-size:15px; margin:0 0 10px; }
+  .hero h1 { font-size:clamp(36px, 6vw, 60px); line-height:1.05; margin:0 0 18px; }
+  .hero p.sub { font-size:18px; color:#e5e8ee; max-width:460px; margin:0 0 26px; }
+  .hero-img { background:#222 center/cover no-repeat url("img/hero.jpg"); min-height:320px; }
+  .btn { display:inline-block; text-decoration:none; padding:15px 28px; border-radius:40px; font-weight:700; margin:4px 8px 4px 0; border:2px solid transparent; }
+  .btn.green { background:var(--green); color:#0c2a17; }
+  .btn.ghost { border-color:#fff; color:#fff; }
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:-48px; position:relative; }
+  .stat { background:var(--card); border-radius:18px; padding:22px 10px; text-align:center; box-shadow:0 8px 24px rgba(0,0,0,.08); }
+  .stat b { display:block; font-size:28px; color:var(--blue); }
+  .stat span { color:var(--muted); font-size:14px; }
+  section { padding:60px 0 10px; }
+  h2 { font-size:clamp(28px, 4vw, 36px); margin:0 0 8px; }
+  .lead { color:var(--muted); margin:0 0 28px; max-width:560px; }
+  .models { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:22px; }
+  .model { background:var(--card); border-radius:22px; overflow:hidden; border:1px solid #e3e5e9; display:flex; flex-direction:column; }
+  .model img { width:100%; display:block; aspect-ratio:3/2; object-fit:cover; }
+  .model .body { padding:22px 24px 26px; display:flex; flex-direction:column; flex:1; }
+  .tag { color:var(--blue); font-size:14px; margin:0; }
+  .model h3 { font-size:30px; margin:4px 0 6px; }
+  .price { color:var(--blue); font-weight:700; font-size:22px; margin:0 0 4px; }
+  .size { color:var(--muted); font-size:15px; margin:0 0 14px; }
+  .model ul { list-style:none; padding:0; margin:0 0 20px; display:grid; grid-template-columns:1fr 1fr; gap:8px 14px; font-size:15px; }
+  .model li::before { content:""; display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--blue); margin-right:9px; }
+  .model .btn { margin-top:auto; text-align:center; width:100%; margin-right:0; }
+  .amen { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:14px; }
+  .amen div { background:var(--card); border:1px solid #e3e5e9; border-radius:18px; padding:22px 10px; text-align:center; font-weight:500; }
+  .amen i { display:block; font-style:normal; font-size:30px; margin-bottom:8px; }
+  .steps { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:16px; }
+  .step { background:var(--card); border:1px solid #e3e5e9; border-radius:20px; padding:24px; }
+  .step .n { width:44px; height:44px; border-radius:50%; background:var(--soft); color:var(--blue); font-weight:700; display:flex; align-items:center; justify-content:center; margin-bottom:12px; }
+  .step h3 { margin:0 0 6px; }
+  .step p { margin:0; color:var(--muted); font-size:15px; }
+  .cta { background:var(--dark); color:#fff; border-radius:30px; text-align:center; padding:50px 20px; margin:60px 0 24px; }
+  .cta h2 { margin-bottom:6px; }
+  .cta .who { font-size:20px; font-weight:700; margin:20px 0 0; }
+  .cta .role { color:#c9ced6; margin:0 0 10px; }
+  .cta .tel { font-size:clamp(34px, 7vw, 52px); font-weight:800; margin:0 0 16px; color:#fff; text-decoration:none; display:block; }
+  .legal { color:var(--muted); font-size:13px; text-align:center; padding:10px 0 90px; }
+  .wa { position:fixed; right:18px; bottom:18px; background:var(--green); color:#0c2a17; font-weight:700; text-decoration:none; padding:15px 24px; border-radius:40px; box-shadow:0 8px 20px rgba(0,0,0,.25); z-index:20; }
+  @media (max-width:760px) {
+    .hero .wrap { grid-template-columns:1fr; }
+    .hero-text { padding:50px 20px 60px; order:2; }
+    .hero-img { order:1; min-height:240px; }
+    .model ul { grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
-<header class="top">
-  <div class="wrap">
-    <span class="brand">Rosy Almanza Limón</span>
-    <nav>
-      <a href="#modelos">Modelos</a>
-      <a href="#amenidades">Amenidades</a>
-      <a href="#ubicacion">Ubicación</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </div>
-</header>
 
 <div class="hero">
   <div class="wrap">
-    <h1>Vonetto Residencial</h1>
-    <p>Casas en Ziré, Querétaro, con casa club, alberca, gimnasio, cancha de pádel y acceso controlado. Descubre tu nuevo hogar.</p>
-    <a class="btn light" href="#contacto">Más información</a>
-    <a class="btn ghost" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20me%20interesa%20Vonetto%20Residencial" target="_blank" rel="noopener">WhatsApp</a>
+    <div class="hero-text">
+      <p class="eyebrow">Ziré · Querétaro</p>
+      <h1>Vonetto<br>Residencial</h1>
+      <p class="sub">Vive como en club: alberca, gimnasio y cancha de pádel a unos pasos de tu casa.</p>
+      <a class="btn green" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20quiero%20agendar%20una%20visita%20a%20Vonetto%20Residencial" target="_blank" rel="noopener">Agenda tu visita</a>
+      <a class="btn ghost" href="#modelos">Ver modelos</a>
+    </div>
+    <div class="hero-img" role="img" aria-label="Fachada de casa en Vonetto Residencial"></div>
   </div>
 </div>
 
-<section id="modelos">
-  <div class="wrap">
-    <h2>Modelos disponibles</h2>
-    <p class="lead">Cuatro opciones de vivienda con distintas superficies y distribución. Pídeme las fichas para comparar cuál se adapta mejor a ti.</p>
-    <div class="grid">
-      <div class="card"><span class="ico">🏡</span><div class="model">Auren</div></div>
-      <div class="card"><span class="ico">🏡</span><div class="model">Nyra</div></div>
-      <div class="card"><span class="ico">🏡</span><div class="model">Kobe</div></div>
-      <div class="card"><span class="ico">🏡</span><div class="model">Matsue</div></div>
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><b>4</b><span>modelos</span></div>
+    <div class="stat"><b>10</b><span>amenidades</span></div>
+    <div class="stat"><b>Preventa</b><span>departamentos</span></div>
+  </div>
+
+  <section id="modelos">
+    <h2>Elige tu modelo</h2>
+    <p class="lead">Tres casas de 2 niveles y departamentos con patio. Te ayudo a decidir cuál va mejor con tu familia y tu crédito.</p>
+    <div class="models">
+
+      <article class="model">
+        <img src="img/nyra.jpg" alt="Casa modelo Nyra">
+        <div class="body">
+          <p class="tag">La entrada más accesible a casa de 3 recámaras</p>
+          <h3>Nyra</h3>
+          <p class="price">Desde $2,465,000 MXN</p>
+          <p class="size">Terreno 105 m² · Construcción 99.27 m²</p>
+          <ul>
+            <li>3 recámaras</li><li>2.5 baños</li>
+            <li>Lavandería interior</li><li>Vestidor en recámara principal</li>
+            <li>Patio posterior</li><li>Cochera para 2 autos</li>
+          </ul>
+          <a class="btn green" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20me%20interesa%20el%20modelo%20Nyra" target="_blank" rel="noopener">Me interesa Nyra</a>
+        </div>
+      </article>
+
+      <article class="model">
+        <img src="img/kobe.jpg" alt="Casa modelo Kobe">
+        <div class="body">
+          <p class="tag">Más espacio para la familia que crece</p>
+          <h3>Kobe</h3>
+          <p class="price">Desde $2,630,000 MXN</p>
+          <p class="size">Terreno 105 m² · Construcción 109.38 m²</p>
+          <ul>
+            <li>3 recámaras</li><li>Sala de TV</li>
+            <li>Lavandería exterior</li><li>Vestidor en recámara principal</li>
+            <li>Patio posterior</li><li>Cochera para 2 autos</li>
+          </ul>
+          <a class="btn green" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20me%20interesa%20el%20modelo%20Kobe" target="_blank" rel="noopener">Me interesa Kobe</a>
+        </div>
+      </article>
+
+      <article class="model">
+        <img src="img/matsue.jpg" alt="Casa modelo Matsue">
+        <div class="body">
+          <p class="tag">El más amplio del desarrollo</p>
+          <h3>Matsue</h3>
+          <p class="price">Desde $2,799,000 MXN</p>
+          <p class="size">Terreno 105 m² · Construcción 118.10 m²</p>
+          <ul>
+            <li>3 recámaras</li><li>2.5 baños</li>
+            <li>Sala de TV</li><li>Lavandería exterior</li>
+            <li>Vestidor en recámara principal</li><li>Cochera para 2 autos</li>
+          </ul>
+          <a class="btn green" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20me%20interesa%20el%20modelo%20Matsue" target="_blank" rel="noopener">Me interesa Matsue</a>
+        </div>
+      </article>
+
+      <article class="model">
+        <img src="img/auren.jpg" alt="Departamento modelo Auren">
+        <div class="body">
+          <p class="tag">Tu primer patrimonio, con patio propio</p>
+          <h3>Auren · Planta baja</h3>
+          <p class="price">Preventa desde $2,145,000 MXN</p>
+          <p class="size">Departamento 77.17 m² · Patio de 11.01 m²</p>
+          <ul>
+            <li>2 recámaras</li><li>2 baños</li>
+            <li>Lavandería interior</li><li>Estacionamiento para 2</li>
+            <li>Patio en planta baja</li><li>Sala, comedor y cocina</li>
+          </ul>
+          <a class="btn green" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20me%20interesa%20el%20modelo%20Auren" target="_blank" rel="noopener">Me interesa Auren</a>
+        </div>
+      </article>
+
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="amenidades" class="alt">
-  <div class="wrap">
-    <h2>Amenidades</h2>
-    <p class="lead">Áreas comunes para disfrutar en familia sin salir del desarrollo.</p>
-    <div class="grid">
-      <div class="card"><span class="ico">🏛️</span>Casa club con terraza</div>
-      <div class="card"><span class="ico">🏊</span>Alberca con asoleadero</div>
-      <div class="card"><span class="ico">💦</span>Chapoteadero</div>
-      <div class="card"><span class="ico">🏋️</span>Gimnasio</div>
-      <div class="card"><span class="ico">💻</span>Coworking</div>
-      <div class="card"><span class="ico">🎾</span>Cancha de pádel</div>
-      <div class="card"><span class="ico">🌳</span>Áreas verdes</div>
-      <div class="card"><span class="ico">🛝</span>Juegos infantiles</div>
-      <div class="card"><span class="ico">🔒</span>Acceso controlado</div>
-      <div class="card"><span class="ico">🐕</span>Pet Park</div>
+  <section id="amenidades">
+    <h2>Todo para vivir mejor</h2>
+    <p class="lead">Áreas para convivir, hacer ejercicio y disfrutar sin salir de tu fraccionamiento.</p>
+    <div class="amen">
+      <div><i>🏊</i>Alberca con asoleadero</div>
+      <div><i>💦</i>Chapoteadero</div>
+      <div><i>🏋️</i>Gimnasio</div>
+      <div><i>💻</i>Coworking</div>
+      <div><i>🎾</i>Cancha de pádel</div>
+      <div><i>🎉</i>Casa club con terraza</div>
+      <div><i>🐶</i>Pet Park</div>
+      <div><i>🛝</i>Juegos infantiles</div>
+      <div><i>🌳</i>Áreas verdes</div>
+      <div><i>🔒</i>Acceso controlado</div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="ubicacion">
-  <div class="wrap">
-    <h2>Ubicación</h2>
-    <p class="lead">Vonetto Residencial se encuentra en Ziré, Querétaro, con acceso por un nuevo acceso a Ziré.</p>
-    <p style="text-align:center"><a class="btn outline" href="https://maps.app.goo.gl/c3ysn1btwwctcAjY7" target="_blank" rel="noopener">Ver ubicación en el mapa</a></p>
-  </div>
-</section>
+  <section id="acompano">
+    <h2>Así te acompaño</h2>
+    <p class="lead">Sin presión y sin letras chiquitas.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Platicamos</h3><p>Me cuentas qué buscas, tu esquema de crédito y la mensualidad con la que te sientes cómodo.</p></div>
+      <div class="step"><div class="n">2</div><h3>Visitamos</h3><p>Conoces el desarrollo y los modelos en persona, con cita y sin compromiso.</p></div>
+      <div class="step"><div class="n">3</div><h3>Te guío</h3><p>Te acompaño en el proceso de apartado y trámite de tu crédito hasta tener tus llaves.</p></div>
+    </div>
+  </section>
 
-<section id="contacto" class="alt">
-  <div class="wrap contact">
-    <h2>¿Ya tienes tu nuevo hogar?</h2>
-    <p class="lead">Contáctame y te doy atención personalizada.</p>
-    <div class="avatar">RA</div>
-    <div class="name">Rosy Almanza Limón</div>
-    <p style="color:var(--muted);margin:0 0 14px">Teléfono: <a href="tel:+524421213000" style="color:var(--text);font-weight:bold;text-decoration:none">442 121 3000</a></p>
-    <a class="btn primary" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20me%20interesa%20Vonetto%20Residencial" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-    <a class="btn outline" href="tel:+524421213000">Llamar ahora</a>
-    <p class="note">Imágenes, precios, disponibilidad y características pueden variar sin previo aviso. Consulta la información vigente conmigo.</p>
+  <div class="cta" id="contacto">
+    <h2>¿Lista tu visita?</h2>
+    <p>Escríbeme y te respondo hoy mismo.</p>
+    <p class="who">Rosy Almanza</p>
+    <p class="role">Asesora inmobiliaria</p>
+    <a class="tel" href="tel:+524421213000">442 121 3000</a>
+    <a class="btn green" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20quiero%20agendar%20una%20visita" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+    <a class="btn ghost" href="tel:+524421213000">Llamar ahora</a>
   </div>
-</section>
 
-<footer>© Rosy Almanza Limón</footer>
+  <p class="legal">Imágenes ilustrativas, pueden variar sin previo aviso. Precios, disponibilidad y esquemas de crédito sujetos a cambio sin previo aviso. Rosy Almanza es asesora independiente.</p>
+</div>
+
+<a class="wa" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20me%20interesa%20Vonetto%20Residencial" target="_blank" rel="noopener">WhatsApp</a>
 </body>
 </html>
