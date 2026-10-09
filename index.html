@@ -3,37 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rosy Almanza Limón</title>
-<meta name="description" content="Contacto de Rosy Almanza Limón.">
+<title>Vonetto Residencial en Querétaro | Rosy Almanza Limón</title>
+<meta name="description" content="Casas en Vonetto Residencial, Ziré, Querétaro: modelos Auren, Nyra, Kobe y Matsue. Contacta a Rosy Almanza Limón.">
 <style>
-  :root { --bg:#f6f3ee; --card:#ffffff; --text:#1f2a37; --muted:#5b6672; --accent:#b4572f; --accent-dark:#8f431f; }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family: Arial, sans-serif; background:var(--bg); color:var(--text); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px; }
-  .card { background:var(--card); max-width:440px; width:100%; border-radius:20px; padding:44px 28px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,.08); }
-  .avatar { width:104px; height:104px; border-radius:50%; background:var(--accent); color:#fff; font-size:40px; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; }
-  h1 { margin:0 0 6px; font-size:28px; font-family: Georgia, serif; }
-  .sub { color:var(--muted); margin:0 0 28px; }
-  .btn { display:block; text-decoration:none; padding:14px 18px; border-radius:12px; margin-top:12px; font-weight:bold; }
-  .primary { background:var(--accent); color:#fff; }
-  .primary:hover { background:var(--accent-dark); }
-  .secondary { border:2px solid var(--accent); color:var(--accent); }
-  .secondary:hover { background:var(--accent); color:#fff; }
-  .phone { margin-top:24px; color:var(--muted); font-size:15px; }
-  .phone a { color:var(--text); font-weight:bold; text-decoration:none; }
-  footer { margin-top:26px; font-size:12px; color:var(--muted); }
+  :root { --bg:#f6f3ee; --card:#ffffff; --text:#1f2a37; --muted:#5b6672; --accent:#b4572f; --accent-dark:#8f431f; --soft:#fbeee6; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; font-family:Arial, sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 20px; }
+  header.top { background:var(--card); box-shadow:0 2px 10px rgba(0,0,0,.06); position:sticky; top:0; z-index:10; }
+  header.top .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-family:Georgia, serif; font-weight:bold; font-size:18px; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:16px; font-size:14px; }
+  nav a:hover { color:var(--accent); }
+  .hero { background:linear-gradient(135deg, #b4572f, #7a3a1c); color:#fff; padding:70px 0; text-align:center; }
+  .hero h1 { font-family:Georgia, serif; font-size:clamp(30px, 6vw, 46px); margin:0 0 12px; }
+  .hero p { max-width:620px; margin:0 auto 26px; font-size:17px; opacity:.95; }
+  .btn { display:inline-block; text-decoration:none; padding:13px 24px; border-radius:12px; font-weight:bold; margin:6px; }
+  .btn.light { background:#fff; color:var(--accent-dark); }
+  .btn.ghost { border:2px solid #fff; color:#fff; }
+  .btn.primary { background:var(--accent); color:#fff; }
+  .btn.primary:hover { background:var(--accent-dark); }
+  .btn.outline { border:2px solid var(--accent); color:var(--accent); }
+  .btn.outline:hover { background:var(--accent); color:#fff; }
+  section { padding:54px 0; }
+  h2 { font-family:Georgia, serif; font-size:28px; margin:0 0 8px; text-align:center; }
+  .lead { text-align:center; color:var(--muted); max-width:620px; margin:0 auto 30px; }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); }
+  .card { background:var(--card); border-radius:16px; padding:24px 18px; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,.06); }
+  .card .ico { font-size:30px; display:block; margin-bottom:8px; }
+  .model { font-family:Georgia, serif; font-size:22px; color:var(--accent-dark); }
+  .alt { background:var(--soft); }
+  .contact { text-align:center; }
+  .contact .name { font-family:Georgia, serif; font-size:26px; margin:10px 0 2px; }
+  .avatar { width:84px; height:84px; border-radius:50%; background:var(--accent); color:#fff; font-size:32px; display:flex; align-items:center; justify-content:center; margin:0 auto; }
+  .note { font-size:12px; color:var(--muted); text-align:center; margin-top:22px; }
+  footer { text-align:center; font-size:13px; color:var(--muted); padding:24px 0 36px; }
 </style>
 </head>
 <body>
-  <main class="card">
+<header class="top">
+  <div class="wrap">
+    <span class="brand">Rosy Almanza Limón</span>
+    <nav>
+      <a href="#modelos">Modelos</a>
+      <a href="#amenidades">Amenidades</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Vonetto Residencial</h1>
+    <p>Casas en Ziré, Querétaro, con casa club, alberca, gimnasio, cancha de pádel y acceso controlado. Descubre tu nuevo hogar.</p>
+    <a class="btn light" href="#contacto">Más información</a>
+    <a class="btn ghost" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20me%20interesa%20Vonetto%20Residencial" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</div>
+
+<section id="modelos">
+  <div class="wrap">
+    <h2>Modelos disponibles</h2>
+    <p class="lead">Cuatro opciones de vivienda con distintas superficies y distribución. Pídeme las fichas para comparar cuál se adapta mejor a ti.</p>
+    <div class="grid">
+      <div class="card"><span class="ico">🏡</span><div class="model">Auren</div></div>
+      <div class="card"><span class="ico">🏡</span><div class="model">Nyra</div></div>
+      <div class="card"><span class="ico">🏡</span><div class="model">Kobe</div></div>
+      <div class="card"><span class="ico">🏡</span><div class="model">Matsue</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="amenidades" class="alt">
+  <div class="wrap">
+    <h2>Amenidades</h2>
+    <p class="lead">Áreas comunes para disfrutar en familia sin salir del desarrollo.</p>
+    <div class="grid">
+      <div class="card"><span class="ico">🏛️</span>Casa club con terraza</div>
+      <div class="card"><span class="ico">🏊</span>Alberca con asoleadero</div>
+      <div class="card"><span class="ico">💦</span>Chapoteadero</div>
+      <div class="card"><span class="ico">🏋️</span>Gimnasio</div>
+      <div class="card"><span class="ico">💻</span>Coworking</div>
+      <div class="card"><span class="ico">🎾</span>Cancha de pádel</div>
+      <div class="card"><span class="ico">🌳</span>Áreas verdes</div>
+      <div class="card"><span class="ico">🛝</span>Juegos infantiles</div>
+      <div class="card"><span class="ico">🔒</span>Acceso controlado</div>
+      <div class="card"><span class="ico">🐕</span>Pet Park</div>
+    </div>
+  </div>
+</section>
+
+<section id="ubicacion">
+  <div class="wrap">
+    <h2>Ubicación</h2>
+    <p class="lead">Vonetto Residencial se encuentra en Ziré, Querétaro, con acceso por un nuevo acceso a Ziré.</p>
+    <p style="text-align:center"><a class="btn outline" href="https://maps.app.goo.gl/c3ysn1btwwctcAjY7" target="_blank" rel="noopener">Ver ubicación en el mapa</a></p>
+  </div>
+</section>
+
+<section id="contacto" class="alt">
+  <div class="wrap contact">
+    <h2>¿Ya tienes tu nuevo hogar?</h2>
+    <p class="lead">Contáctame y te doy atención personalizada.</p>
     <div class="avatar">RA</div>
-    <h1>Rosy Almanza Limón</h1>
-    <p class="sub">Querétaro, México</p>
+    <div class="name">Rosy Almanza Limón</div>
+    <p style="color:var(--muted);margin:0 0 14px">Teléfono: <a href="tel:+524421213000" style="color:var(--text);font-weight:bold;text-decoration:none">442 121 3000</a></p>
+    <a class="btn primary" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20me%20interesa%20Vonetto%20Residencial" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    <a class="btn outline" href="tel:+524421213000">Llamar ahora</a>
+    <p class="note">Imágenes, precios, disponibilidad y características pueden variar sin previo aviso. Consulta la información vigente conmigo.</p>
+  </div>
+</section>
 
-    <a class="btn primary" href="https://wa.me/524421213000?text=Hola%20Rosy%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-    <a class="btn secondary" href="tel:+524421213000">Llamar ahora</a>
-
-    <p class="phone">Teléfono: <a href="tel:+524421213000">442 121 3000</a></p>
-    <footer>© Rosy Almanza Limón</footer>
-  </main>
+<footer>© Rosy Almanza Limón</footer>
 </body>
 </html>
